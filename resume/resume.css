@@ -1,0 +1,5 @@
+.background {
+    background-image: url("city.jpeg");
+    background-size: cover;
+    height: 100%;
+}
