@@ -1,5 +1,23 @@
 .background {
     background-image: url("city.jpeg");
     background-size: cover;
-    height: 100%;
+    background-position: 0px 700px;
+    height: 400px;
+}
+
+.menu {
+    background-color: #000000;
+    opacity: 0.3;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    position: absolute;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    z-index: 2;
+    position: relative;
 }
