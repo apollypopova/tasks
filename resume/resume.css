@@ -1,23 +1,50 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .background {
     background-image: url("city.jpeg");
-    background-size: cover;
-    background-position: 0px 700px;
+    background-position: center;
+    background-repeat: no-repeat;  
     height: 400px;
+    background-size: cover; 
 }
 
 .menu {
-    background-color: #000000;
-    opacity: 0.3;
+    background: rgba(0, 0, 0, 0.3);
     width: 400px;
     height: 400px;
-    z-index: 1;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 img {
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
-    z-index: 2;
-    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.name, .information, .geo {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.information, .geo {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.geo {
+    font-size: 14px;
+    font-weight: 400;
 }
