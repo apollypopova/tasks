@@ -1,0 +1,15 @@
+body {
+    background-color: #c1bdba;
+}
+
+.menu {
+    background-color: #24323d;
+    height: 50px;
+}
+
+.main {
+    background-color: #24323d;
+    margin: 25px 200px 25px 200px;
+    padding: 20px;
+    border-radius: 5px;
+}
