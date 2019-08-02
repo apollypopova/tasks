@@ -1,5 +1,6 @@
 body {
     background-color: #c1bdba;
+    font-family: "Open Sans", sans-serif;
 }
 
 .menu {
@@ -8,8 +9,31 @@ body {
 }
 
 .main {
+    display: flex;
+    justify-content: center;
+}
+
+form {
     background-color: #24323d;
-    margin: 25px 200px 25px 200px;
+    margin-top: 25px;
+    width: 360px;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 4px;
+}
+
+.welcome {
+    color: #ffffff;
+}
+
+.forgot {
+    color: #1ab188;
+}
+
+.submit {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #1ab188;
+    border-style: none;
+    width: 320px;
 }
