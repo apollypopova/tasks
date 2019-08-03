@@ -1,11 +1,7 @@
 body {
     background-color: #c1bdba;
-    font-family: "Open Sans", sans-serif;
-}
-
-.menu {
-    background-color: #24323d;
-    height: 50px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 10px;
 }
 
 .main {
@@ -15,25 +11,103 @@ body {
 
 form {
     background-color: #24323d;
-    margin-top: 25px;
-    width: 360px;
-    padding: 20px;
+    margin-top: 140px;
+    width: 410px;
+    padding: 30px;
     border-radius: 4px;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+}
+
+.sign_up,
+.log_in {
+    width: 50%;
+    padding: 10px 0px;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif !important;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    background-color: #43525a;
+}
+
+.active {
+    background-color: #1ab188;
+}
+
+.tab:hover {
+    background-color: #138063;
 }
 
 .welcome {
     color: #ffffff;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 30px;
 }
 
-.forgot {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    background-color: #24323d;
+    margin-top: 30px;
+    padding: 5px 0px 5px 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    margin-right: 30px;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 48%;
+}
+
+input[type="password"] {
+    margin-bottom: 15px;
+}
+
+a.forgot {
     color: #1ab188;
+    font-size: 1.25em;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+a.forgot:hover {
+    color: #ffffff;
 }
 
 .submit {
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #1ab188;
     color: #ffffff;
     font-size: 24px;
     font-weight: 600;
-    background-color: #1ab188;
-    border-style: none;
-    width: 320px;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+
+.submit:hover {
+    background-color: #138063;
 }
