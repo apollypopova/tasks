@@ -1,0 +1,25 @@
+body {
+    background-color: #1f253d;
+}
+
+nav.top_menu {
+    
+}
+
+nav.top_menu > ul {
+    list-style-type: none;
+    background-color: #394264;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav.top_menu > ul > li {
+    float: left;
+}
+
+
+
+li a {
+    display: block;
+}
