@@ -6,15 +6,16 @@ body {
 }
 
 .top_menu-list {
+    display: flex;
+    align-items: center;
     list-style-type: none;
     background-color: #394264;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     margin-top: 40px;
     overflow: hidden;
     border-radius: 5px;
     font-size: 14px;
-    padding:
 }
 
 .top_menu-list > li {
@@ -24,9 +25,10 @@ body {
 .top_menu-list > li > a {
     display: block;
     text-align: center;
-    padding: 0px 24px;
+    padding-left: 24px;
+    padding-right: 24px;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
 .messages {
@@ -43,7 +45,7 @@ body {
     font-weight: 700;
 }
 
-span {
+span.bg_count{
     background-color: #e74d64;
     border-radius: 50%;
     width: 16px;
@@ -51,4 +53,20 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.top_menu__profile {
+    float: right!important;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+}
+
+.small_photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
 }
