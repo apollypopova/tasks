@@ -6,42 +6,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     </head>
 
     <body>
-
         <header>
-            <ul class="top_menu-list">
-                <li class="settings"><a href="#settings">Settings</a></li>
-                <li class="account"><a href="#account">Account</a></li>
-                <li class="messages">
-                    <a href="#messages">Messages</a>
-                    <div class="count_messages"><span class="bg_count">5</span></div>
-                </li>
-                <li class="favorites"><a href="#favorites">Favorites</a></li>
-                <li class="top_menu__profile">
-                    <div>Me</div>
-                    <img src="profile.jpg" class="small_photo">
-                </li>
-            </ul>
+            <nav class="header-menu">
+                <a class="header-menu__item settings" href="#settings">Settings</a>
+                <a class="header-menu__item account" href="#account">Account</a>
+                <a class="header-menu__item messages" href="#messages">Messages</a>
+                <a class="header-menu__item favorites" href="#favorites">Favorites</a></li>
+                <a class="header-menu__item profile">Me</a>
+            </nav>
         </header>
 
         <main>
-            <nav class="left_menu">
-                <div class="left_menu_head"></div>
-                <ul>
-                    <li>Messages</li>
-                    <li>Invites</li>
-                    <li>Events</li>
-                    <li>Account settings</li>
-                    <li>Statistics</li>
-                </ul>
+            <nav class="left-menu">
+                <div class="left-menu__head"></div>
+                <a class="left-menu__messages">Messages</a>
+                <a class="lefy-menu__invites">Invites</a>
+                <a class="left-menu__events">Events</a>
+                <a class="left-menyu__account-settings">Account settings</a>
+                <a class="left-menu__statistics">Statistics</a>
             </nav>
             <div class="profile">
-                <img src="" alt="">
-                <div class="profile_name"></div>
-                <div class="profile_decription"></div>
-                <div class="profile_stat"></div>
+                <img class="profile__photo" src="" alt="">
+                <div class="profile__name"></div>
+                <div class="profile__decription"></div>
+                <div class="profile__statistics"></div>
             </div>
             <aside>
                 <div class=""></div>
@@ -49,9 +41,7 @@
                     <input type="email" id="email">
                     <a href=""></a>
                 </form>
-            </aside>
-            
+            </aside>   
         </main>
-
     </body>
 </html>
