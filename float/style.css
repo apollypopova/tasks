@@ -10,7 +10,6 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    background-color: #394264;
     border-radius: 0.25rem;
 }
 
@@ -23,4 +22,29 @@ html {
 
 .header-menu__item.profile {
     
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-menu,
+.left-menu, 
+.form-subscribe {
+    background-color: #394264;
+}
+
+.left-menu {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.centr-profile {
+    width: 33.3%;
+}
+
+.form-subscribe {
+    width: 33.3%;
 }
