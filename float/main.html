@@ -12,22 +12,32 @@
     <body>
         <header>
             <nav class="header-menu">
-                <a class="header-menu__item settings" href="#settings">Settings</a>
-                <a class="header-menu__item account" href="#account">Account</a>
-                <a class="header-menu__item messages" href="#messages">Messages</a>
-                <a class="header-menu__item favorites" href="#favorites">Favorites</a></li>
-                <a class="header-menu__item profile">Me</a>
+                <a class="header-menu__link" href="#settings">Settings</a>
+                <a class="header-menu__link" href="#account">Account</a>
+                <a class="header-menu__link" href="#messages">Messages</a>
+                <a class="header-menu__link" href="#favorites">Favorites</a></li>
+                <a class="header-menu__link">Me</a>
             </nav>
         </header>
 
         <main>
             <nav class="left-menu">
-                <div class="left-menu__head"></div>
-                <a class="left-menu__messages">Messages</a>
-                <a class="lefy-menu__invites">Invites</a>
-                <a class="left-menu__events">Events</a>
-                <a class="left-menyu__account-settings">Account settings</a>
-                <a class="left-menu__statistics">Statistics</a>
+                <div class="left-menu__head">Menu box</div>
+                <div class="left-menu__link">
+                    <a class="left-menu__link__name" href="#messages">Messages</a>
+                    <div class="left-menu__link__count">24</div>
+                </div>
+                <div class="left-menu__link">
+                    <a class="left-menu__link" href="#invites">Invites</a>
+                    <div>3</div>
+                </div>
+                <div class="left-menu__link">
+                    <a class="left-menu__link__name" href="#events">Events</a>
+                    <div class="left-menu__link__count">5</div>
+                </div>
+
+                <a class="left-menu__link__name" href="#acc_settings">Account settings</a>
+                <a class="left-menu__link__name" href="#statistics">Statistics</a>
             </nav>
             <div class="centr-profile">
                 <img class="centr-profile__photo" src="" alt="">
