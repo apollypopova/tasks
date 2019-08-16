@@ -3,7 +3,8 @@ html {
     margin-right: 15rem;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    background-color: #1f253d;    
+    background-color: #1f253d;   
+    color: #ffffff;
 }
 
 .header-menu {
@@ -13,38 +14,77 @@ html {
     border-radius: 0.25rem;
 }
 
-.header-menu__item {
+.header-menu__link {
     padding: 1rem 4rem 1rem 1rem;
     text-decoration: none;
     color: #ffffff;
 
 }
 
-.header-menu__item.profile {
+.header-menu__link.profile {
     
 }
 
-.main {
+body main {
     display: flex;
     flex-direction: row;
 }
 
 .header-menu,
 .left-menu, 
+.centr-profile,
 .form-subscribe {
     background-color: #394264;
 }
 
+.left-menu,
+.centr-profile,
+.form-subscribe {
+    flex-grow: 1;
+    width: 33.33%;
+}
+
 .left-menu {
-    width: 33.3%;
     display: flex;
     flex-direction: column;
 }
 
-.centr-profile {
-    width: 33.3%;
+.left-menu__link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.centr-profile__photo {
+    object-fit: cover;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 5px solid #50597b;
+}
+
+.centr-profile__stats {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-stats,
+.centr-stats,
+.right-stats {
+    flex-grow: 1;
+    width: 33.33%;
+}
+
+.left-stats {
+    border-top: 5px solid #ffbb4e;
+}
+
+.centr-stats {
+    border-top: 5px solid #0db1b1;
+}
+
+.right-stats {
+    border-top: 5px solid #f34d65;
 }
 
 .form-subscribe {
-    width: 33.3%;
 }
