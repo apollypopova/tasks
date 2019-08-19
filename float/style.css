@@ -90,9 +90,17 @@ body main {
 .left-menu {
     display: flex;
     flex-direction: column;
+    border-radius: 0.25rem;
+}
+
+.left-menu__head {
+    background-color: #11a8ab;
 }
 
 .left-menu__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-decoration: none;
     color: #ffffff;
 }
