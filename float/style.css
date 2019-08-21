@@ -7,6 +7,13 @@ html {
     color: #ffffff;
 }
 
+.header-menu,
+.left-menu, 
+.centr-profile,
+.form-subscribe {
+    background-color: #394264;
+}
+
 .header-menu {
     display: flex;
     flex-direction: row;
@@ -73,13 +80,6 @@ body main {
     margin-top: 2rem;
 }
 
-.header-menu,
-.left-menu, 
-.centr-profile,
-.form-subscribe {
-    background-color: #394264;
-}
-
 .left-menu,
 .centr-profile,
 .form-subscribe {
@@ -90,11 +90,22 @@ body main {
 .left-menu {
     display: flex;
     flex-direction: column;
+    align-content: center;
     border-radius: 0.25rem;
+    margin-right: 2rem;
+}
+
+.left-menu__head,
+.left-menu__link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .left-menu__head {
     background-color: #11a8ab;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .left-menu__link {
@@ -105,17 +116,69 @@ body main {
     color: #ffffff;
 }
 
+.left-menu__link:not(:last-child) {
+    border-bottom: 0.125rem solid #1f253d;
+}
+
+.left-menu__link__name {
+    margin-left:  4rem;
+}
+
+.left-menu__link__count {
+    background-color: #50597b;
+    width: 2.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+
+
+/*==========================================================*/
+
+
+
+.centr-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .centr-profile__photo {
     object-fit: cover;
     width: 9rem;
     height: 9rem;
     border-radius: 50%;
     border: 5px solid #50597b;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.centr-profile__name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.centr-profile__description {
+    font-weight: 300;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .centr-profile__stats {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .left-stats,
@@ -137,5 +200,12 @@ body main {
     border-top: 5px solid #f34d65;
 }
 
+
+
+/*==========================================================*/
+
+
+
 .form-subscribe {
+    margin-right: 2rem;
 }
