@@ -77,6 +77,7 @@ html {
 body main {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     margin-top: 2rem;
 }
 
@@ -85,13 +86,13 @@ body main {
 .form-subscribe {
     flex-grow: 1;
     width: 33.33%;
+    border-radius: 0.25rem;
 }
 
 .left-menu {
     display: flex;
     flex-direction: column;
     align-content: center;
-    border-radius: 0.25rem;
     margin-right: 2rem;
 }
 
@@ -106,6 +107,7 @@ body main {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    border-radius: 0.25rem 0.25rem 0 0;
 }
 
 .left-menu__link {
@@ -117,7 +119,7 @@ body main {
 }
 
 .left-menu__link:not(:last-child) {
-    border-bottom: 0.125rem solid #1f253d;
+    border-bottom: 0.125rem solid #2D3552;
 }
 
 .left-menu__link__name {
@@ -145,8 +147,7 @@ body main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .centr-profile__photo {
@@ -176,6 +177,7 @@ body main {
 .centr-profile__stats {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -186,26 +188,51 @@ body main {
 .right-stats {
     flex-grow: 1;
     width: 33.33%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .left-stats {
     border-top: 5px solid #ffbb4e;
+    border-right: 0.125rem solid #2D3552;
 }
 
 .centr-stats {
     border-top: 5px solid #0db1b1;
+    border-left: 0.0625rem solid #2D3552;
+    border-right: 0.0625rem solid #2D3552;
 }
 
 .right-stats {
     border-top: 5px solid #f34d65;
+    border-left: 0.125rem solid #2D3552;
 }
 
 
 
 /*==========================================================*/
-
-
+aside {
+    
+}
 
 .form-subscribe {
-    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-subscribe__phrase {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-subscribe__input {
+
+}
+
+.form-subscribe__button {
+    background-color: #11a8ab;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
 }
