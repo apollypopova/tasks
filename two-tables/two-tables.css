@@ -1,0 +1,27 @@
+html {
+    font-size: 12px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2b2b2b;
+}
+
+.table__emloyees {
+    width: 50%;
+}
+
+.employees__headers {
+    background-color: #ea6153;
+    color: #ffffff;
+}
+
+.table__emloyees td:nth-child(odd) {
+
+}
+
+
+/*==========================================================*/
+
+
+.table__price th {
+    background-color: #27AE60;
+}
