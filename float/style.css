@@ -27,21 +27,21 @@ aside {
 
 .header-menu__nav {
     display: flex;
+    padding-left: 2rem;
 }
 
 .header-menu__nav__link {
-    padding-left: 2rem;
-    padding-right: 4rem;
+    display: flex;
+    padding-right: 3rem;
     text-decoration: none;
     color: #ffffff;
-}
-
-.nav__link__name,
-.nav__link__count {
-    display: inline-block;
+    position: relative;
 }
 
 .nav__link__count {
+    position: absolute;
+    top: -75%;
+    right: 25%;
     margin-left: 0.25rem;
     width: 1rem;
     height: 1rem;
@@ -84,6 +84,7 @@ body main {
     flex-direction: row;
     align-items: flex-start;
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 nav.left-menu,
@@ -150,10 +151,29 @@ aside {
 .centr-profile {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+}
+
+.centr-profile__align-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.centr-profile__button {
+    background-color: #959ebc;
+    height: 0.1875rem;
+    width: 1.25rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.centr-profile__align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .centr-profile__photo {
@@ -195,23 +215,44 @@ aside {
 .right-stats {
     flex-grow: 1;
     width: 33.33%;
-    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
+.left-stats__border, 
+.centr-stats__border, 
+.right-stats__border {
+    height: 0.25rem;
+    
+}
+
+.left-stats__count,
+.centr-stats__count, 
+.right-stats__count {
+    padding-top: 1rem;
+}
+
+.left-stats__border {
+    background-color: #ffbb4e;
+}
+
 .left-stats {
-    border-top: 5px solid #ffbb4e;
     border-right: 0.125rem solid #2D3552;
 }
 
+.centr-stats__border {
+    background-color: #0db1b1;
+}
+
 .centr-stats {
-    border-top: 5px solid #0db1b1;
     border-left: 0.0625rem solid #2D3552;
     border-right: 0.0625rem solid #2D3552;
 }
 
+.right-stats__border {
+    background-color: #f34d65;
+}
+
 .right-stats {
-    border-top: 5px solid #f34d65;
     border-left: 0.125rem solid #2D3552;
 }
 
