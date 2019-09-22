@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #3498DB;
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Roboto', sans-serif;
     width: 100%;
 }
@@ -13,8 +13,14 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 1rem;
-    width: 33.3%;
+    padding: 1.5rem;
+    width: 25%;
     background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.profile-card__avatar {
+    position: relative;
 }
 
 .avatar__photo {
@@ -25,9 +31,62 @@ body {
 }
 
 .avatar__icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #2ecc71;
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: 70%;
+}
 
+.fa-headphones {
+    font-size: 0.75rem;
+    color: #ffffff;
+    
 }
 
 .profile-card__name {
     font-weight: bold;
+    font-size: 1.0625rem;
+    margin-top: 1rem;
+}
+
+.profile-card__stats {
+    border-collapse: collapse;
+    width: 100%;
+    color: #b8c1d3;
+    margin-top: 2rem;
+}
+
+td {
+    border-bottom: 1px solid #b8c1d3;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.stats__count {
+    text-align: right;
+}
+
+.profile-card__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #2ecc71;
+    border-radius: 2rem;
+    width: 8rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+}
+
+.button__text {
+    margin-left: 0.25rem;
+    color: #ffffff;
 }

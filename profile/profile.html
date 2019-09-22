@@ -7,33 +7,38 @@
         <link href="profile.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
     <div class="profile-card">
         <div class="profile-card__avatar">
             <img class="avatar__photo" src="profile.jpg" alt="photo">
-            <div class="avatar__icon"></div>
+            <div class="avatar__icon">
+                <i class='fas fa-headphones'></i>
+            </div>
         </div>
         <div class="profile-card__name">apollypopova</div>
         <table class="profile-card__stats">
-            <td>
-                <tr class="parameter">Followers</tr>
-                <tr class="count">150k</tr>
-            </td>
-            <td>
-                <tr class="parameter">Following</tr>
-                <tr class="count">1820</tr>
-            </td>
-            <td>
-                <tr class="parameter">Reputation</tr>
-                <tr class="count">98%</tr>
-            </td>
-            <td>
-                <tr class="parameter">Rank</tr>
-                <tr class="count">Expert</tr>
-            </td>
+            <tr>
+                <td class="stats__parameter">Followers</td>
+                <td class="stats__count">150k</td>
+            </tr>
+            <tr>
+                <td class="stats__parameter">Following</td>
+                <td class="stats__count">1820</td>
+            </tr>
+            <tr>
+                <td class="stats__parameter">Reputation</td>
+                <td class="stats__count">98%</td>
+            </tr>
+            <tr>
+                <td class="stats__parameter">Rank</td>
+                <td class="stats__count">Expert</td>
+            </tr>
         </table>
-        <div class="profile-card__button"></div>
+        <div class="profile-card__button">
+            <i style="color: white; font-size: 1rem" class="fas fa-paper-plane"></i>
+            <div class="button__text">Contact</div>
+        </div>
     </div>
-</body>
 </html>
