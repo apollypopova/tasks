@@ -3,25 +3,48 @@ html {
     text-align: left;
     font-family: 'Roboto', sans-serif;
     background-color: #2b2b2b;
+    padding: 0.5rem;
 }
 
-.table__emloyees {
+table {
+    border: none;
+    border-collapse: collapse;
     width: 50%;
 }
 
-.employees__headers {
-    background-color: #ea6153;
-    color: #ffffff;
+td, 
+th {
+    padding: 0.5rem;
 }
 
-.table__emloyees td:nth-child(odd) {
-
+.employees__even-rows {
+    background-color: #f6f6f6;
 }
+
+.employees__odd-rows {
+    background-color: #e9e9e9;
+}
+
 
 
 /*==========================================================*/
 
 
-.table__price th {
+
+.table__employees {
+    margin-bottom: 2.5rem;
+}
+
+.employees__headers,
+.price__headers {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.employees__headers {
+    background-color: #ea6153;
+}
+
+.price__headers {
     background-color: #27AE60;
 }
